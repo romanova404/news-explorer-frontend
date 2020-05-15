@@ -1,0 +1,22 @@
+@import url(./__bookmark/);
+@import url(./__pic/card__pic.css);
+@import url(./__textblock/card__textblock.css);
+@import url(./__date/card__date.css);
+@import url(./__title/card__title.css);
+@import url(./__text/card__text.css);
+@import url(./__source/card__source.css);
+
+.card {
+  position: relative;
+  height: 576px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  border-radius: 16px 16px 0 0;
+  transition: box-shadow .3s;
+}
+
+.card:hover {
+  box-shadow: 0 10px 25px rgba(33,33,33,.2);
+}

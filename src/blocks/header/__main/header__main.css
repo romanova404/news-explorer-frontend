@@ -1,0 +1,10 @@
+.header__main {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 48px;
+  border-bottom: 3px solid #fff;
+  text-decoration: none;
+  color: #fff;
+}

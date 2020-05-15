@@ -1,0 +1,7 @@
+.card__bookmark {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  height: 40px;
+  width: 40px;
+}

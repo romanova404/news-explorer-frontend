@@ -1,0 +1,6 @@
+.card__textblock {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

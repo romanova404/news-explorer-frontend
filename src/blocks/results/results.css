@@ -1,0 +1,7 @@
+@import url(./__title/results__title.css);
+@import url(./__cardbox/results__cardbox.css);
+
+.results {
+  padding: 80px 96px;
+  background-color: #F5F6F7;
+}

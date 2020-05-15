@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Поисковик для новостей ">
+  <meta name="author" content="Юлия Романова">
+  <title>NewsExplorer</title>
+  <link rel="icon" href="<%=require(./images/favicon.svg).default%>" type="image/x-icon">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+</head>
+
+
+<body>
+  <header class="header header_saved">
+    <p class="header__newsexplorer header_saved">NewsExplorer</p>
+    <a class="header__main header_saved link">Главная</a>
+    <p class="header__articles header_saved">Сохранённые статьи</p>
+    <button class="header__logout header_saved">Грета <img alt="выйти" src="<%=require(./images/logout_black.svg).default%>"></button>
+  </header>
+
+
+  <section class="news">
+    <h5 class="news__title">Сохранённые статьи</h5>
+    <h1 class="news__amount">Грета, у вас 5 сохранённых статей</h1>
+    <p class="news__keywords">По ключевым словам: <span class="bold">Природа, Тайга</span> и <span class="bold">2 другим</span></p>
+  </section>
+
+
+  <section class="articles">
+    <div class="articles__cardbox cardbox">
+      <div class="card">
+        <img class="card__pic" alt="Иллюстрация статьи" src="<%=require(./images/image_08-min.png).default%>">
+        <button class="card__bookmark bookmark_normal"><img alt="Сохранить статью" src="<%=require(./images/bookmark-normal.svg).default%>"></button>
+        <p class="card__date">2 августа, 2019</p>
+        <h3 class="card__title">Национальное достояние – парки</h3>
+        <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+        <p class="card__source">Лента.ру</p>
+      </div>
+      <div class="card">
+        <img class="card__pic" alt="Иллюстрация статьи" src="<%=require(./images/image_04-min.png).default%>">
+        <button class="card__bookmark bookmark_normal"><img alt="Сохранить статью" src="<%=require(./images/bookmark-normal.svg).default%>"></button>
+        <p class="card__date">2 августа, 2019</p>
+        <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
+        <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
+        <p class="card__source">Медуза</p>
+      </div>
+      <div class="card">
+        <img class="card__pic" alt="Иллюстрация статьи" src="<%=require(./images/image_07-min.png).default%>">
+        <button class="card__bookmark bookmark_normal"><img alt="Сохранить статью" src="<%=require(./images/bookmark-normal.svg).default%>"></button>
+        <p class="card__date">2 августа, 2019</p>
+        <h3 class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
+        <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+        <p class="card__source">Риа</p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <p class="footer__copyright">© 2020 Supersite, Powered by News API</p>
+    <a class="footer__main" title="Перейти на главную старницу" href=# >Главная</a>
+    <a class="footer__praktikum" title="Перейти на страницу Яндекс.Практикума" href=# >Яндекс.Практикум</a>
+    <a class="footer__github" title="Перейти на страницу github" href=# >пик гита</a>
+    <a class="footer__facebook" title="Перейти на страницу в facebook" href=# >пик фб</a>
+  </footer>
+
+  <script type="module" src="<%= htmlWebpackPlugin.files.js%>"></script>
+</body>
+</html>
