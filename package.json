@@ -1,6 +1,6 @@
 {
   "name": "news-explorer-frontend",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Здесь будет фронтенд",
   "main": "index.js",
   "scripts": {

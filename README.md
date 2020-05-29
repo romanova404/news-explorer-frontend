@@ -4,7 +4,7 @@
 
 
 ## Адрес на github
-https://romanova404.github.io/news-explorer-frontend/
+https://github.com/romanova404/news-explorer-frontend
 
 ## Адрес на gh-pages
 https://romanova404.github.io/news-explorer-frontend/
