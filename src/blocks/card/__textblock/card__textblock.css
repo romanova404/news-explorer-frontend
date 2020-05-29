@@ -1,6 +1,15 @@
 .card__textblock {
-  padding: 20px 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding-left: 24px;
+}
+
+@media (max-width: 768px) and (min-width: 321px) {
+  .card__textblock {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 321px) {
+  .card__textblock {
+    padding-left: 16px;
+  }
 }

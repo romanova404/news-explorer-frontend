@@ -2,6 +2,8 @@
 @import url(./vendor/fonts.css);
 @import url(./blocks/page/page.css);
 @import url(./blocks/header/header.css);
+@import url(./blocks/header/header_white_theme.css);
+@import url(./blocks/header/header_menu.css);
 @import url(./blocks/search/search.css);
 @import url(./blocks/loading/loading.css);
 @import url(./blocks/not-found/not-found.css);
@@ -9,3 +11,17 @@
 @import url(./blocks/cardbox/cardbox.css);
 @import url(./blocks/card/card.css);
 @import url(./blocks/bookmark/bookmark.css);
+@import url(./blocks/bookmark/bookmark_marked.css);
+@import url(./blocks/trash/trash.css);
+@import url(./blocks/popup/popup.css);
+@import url(./blocks/form/form.css);
+@import url(./blocks/error-message/error-message.css);
+@import url(./blocks/author/author.css);
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/articles/articles.css);
+@import url(./blocks/saved-news/saved-news.css);
+
+
+span {
+  font-weight: bold;
+}

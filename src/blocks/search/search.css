@@ -9,3 +9,20 @@
   margin: auto;
   padding: 40px 0 71px;
 }
+
+@media (max-width: 1439px) and (min-width: 768px) {
+  .search {
+    padding: 38px 0 60px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+  .search {
+    padding: 38px 0 48px;
+    width: 80%;
+  }
+}
+
+
+
