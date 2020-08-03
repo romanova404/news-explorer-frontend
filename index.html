@@ -9,7 +9,7 @@
   <meta name="author" content="Юлия Романова">
   <title>NewsExplorer</title>
   <link rel="icon" href="./images/favicon.svg" type="image/svg">
-  <link rel="stylesheet" href="main.c0af0f3a4d68af5d2fea.css">
+  <link rel="stylesheet" href="main.8b7a4bd9e9c57183c1d5.css">
 </head>
 
 
@@ -35,11 +35,12 @@
         <h1 class="search__title">Что в мире творится?</h1>
         <p class="search__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
         <form class="search__form" name="search">
-          <input class="search__input" type="search" placeholder="Введите тему новости">
+          <input class="search__input" name="keyword" type="search" placeholder="Введите тему новости">
           <button class="search__button" type="submit">Искать</button>
         </form>
       </div>
     </section>
+
 
     <section class="loading hidden">
       <div class="loading__loader"></div>
@@ -78,11 +79,11 @@
           <span id="login-email-error" class="error-message"></span>
 
           <label for class="form__field">Пароль</label>
-          <input id="login-password" name="password" type="text" required minlength="8" class="form__input form__input_type_password" placeholder="Введите пароль">
+          <input id="login-password" name="password" type="password" required minlength="8" class="form__input form__input_type_password" placeholder="Введите пароль">
           <span id="login-password-error" class="error-message"></span>
 
           <span id="login-error" class="error-message server-error"></span>
-          <button type="submit" disabled class="form__button form__button_login">Войти</button>
+          <button type="submit" class="form__button form__button_login">Войти</button>
         </form>
 
         <p class="popup__choice">или <a class="popup__link popup__link_register">Зарегистрироваться</a></p>
@@ -101,7 +102,7 @@
           <span id="register-email-error" class="error-message"></span>
 
           <label class="form__field">Пароль</label>
-          <input id="register-password" name="password" type="text" minlength="8" required class="form__input form__input_type_password" placeholder="Введите пароль">
+          <input id="register-password" name="password" type="password" minlength="8" required class="form__input form__input_type_password" placeholder="Введите пароль">
           <span id="register-password-error" class="error-message"></span>
 
           <label class="form__field">Имя</label>
@@ -109,7 +110,7 @@
           <span id="register-name-error" class="error-message"></span>
 
           <span id="register-error" class="error-message server-error"></span>
-          <button type="submit" disabled class="form__button form__button_register">Зарегистрироваться</button>
+          <button type="submit" class="form__button form__button_register">Зарегистрироваться</button>
         </form>
 
         <p class="popup__choice">или <a class="popup__link popup__link_login">Войти</a></p>
@@ -125,11 +126,12 @@
     </template>
 
     <section class="author">
-      <img class="author__portrait" alt="портрет автора" src="./images/image-03-min.png">
+      <img class="author__portrait" alt="портрет автора" src="./images/жи-min.png">
       <div class="author__textblock">
         <h2 class="author__title">Об авторе</h2>
-        <p class="author__about">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
-        <p class="author__about">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+        <p class="author__about">Привет! Я Юлия Романова, совсем зелёный и хрустящий веб-разработчик, а это - моя дипломная работа: сайт, написанный с помощью на HTML, CSS и JavaScript.</p>
+        <p class="author__about">Учеба в Практикуме стала для меня первым серьезным опытом в разработке, с пройденными от начала до конца проектами и целыми работающими сайтами, которыми легко и приятно пользоваться.
+          Но главное - постоянной практикой и поддержкой людей с таким же интересом - учиться программированию и никогда не останавливаться! </p>
       </div>
     </section>
 
@@ -146,7 +148,10 @@
       </div>
     </footer>
 
+
   </div>
-  <script type="module" src=""></script>
+
+
+  <script type="module" src="main.4d7c8817ec02b9ca56cd.js"></script>
 </body>
 </html>
