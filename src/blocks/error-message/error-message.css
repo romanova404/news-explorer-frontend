@@ -7,9 +7,7 @@
   color: #FF0000;
   margin-top: -25px;
   margin-bottom: 12px;
-  display: block;
-  visibility: hidden;
-
+  height: 15px;
 }
 .error-message:last-of-type {
   margin-top: -30px;

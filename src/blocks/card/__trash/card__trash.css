@@ -4,13 +4,14 @@
   border: none;
   border-radius: 8px;
   box-sizing: border-box;
-  background-color: #fff;
+  background-image: url(../../../images/trash-normal.svg);
   padding: 11px;
   margin-right: 20px;
   cursor: pointer;
+  z-index: 20;
 }
 
-.card__trash:hover .trash {
+.card__trash:hover {
  background-image: url(../../../images/trash-hover.svg);
 }
 

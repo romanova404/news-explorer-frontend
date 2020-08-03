@@ -15,7 +15,6 @@
   margin-bottom: 13px;
   align-self: center;
   cursor: pointer;
-  display: none;
 }
 
 .header__auth:focus {

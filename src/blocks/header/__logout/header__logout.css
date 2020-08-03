@@ -18,7 +18,6 @@
 .header__logout::after {
   content: url(../../../images/logout_white.svg);
   margin-left: 10px;
-  align-self:
 }
 
 .header__logout:focus {

@@ -1,4 +1,5 @@
 @import url(./__bookmark/card__bookmark.css);
+@import url(./__bookmark/card__bookmark_marked.css);
 @import url(./__pic/card__pic.css);
 @import url(./__textblock/card__textblock.css);
 @import url(./__date/card__date.css);
@@ -22,6 +23,7 @@
   border-radius: 16px;
   padding-bottom: 24px;
   transition: box-shadow .3s;
+  text-decoration: none;
 }
 
 .card:hover {
