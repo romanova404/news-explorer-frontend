@@ -28,8 +28,13 @@ export class NewsCard {
 
       this.innerDOM.querySelector('.card__bookmark').addEventListener('click', (event) => {
         if(!this.innerDOM.querySelector('.card__bookmark_marked')) {
-          event.target.classList.add('card__bookmark_marked');
-          this._api.createArticle( this.cardKeyword, this.cardTitle, this.cardText, this.cardDate, this.cardSource, this.cardLink, this.cardPic );
+          this._api.createArticle( this.cardKeyword, this.cardTitle, this.cardText, this.cardDate, this.cardSource, this.cardLink, this.cardPic )
+            .then (() => {
+              event.target.classList.add('card__bookmark_marked');
+            })
+            .catch(() => {
+              console.log('Не удалось сохранить карточку');
+            })
         }
       })
     }

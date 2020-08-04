@@ -55,6 +55,9 @@ function getProps() {
     })
 }
 
+function isClickOnSmallScreen(event) {
+  return (window.matchMedia("(max-width: 767px)").matches) && (event.target.classList.contains('header__newsexplorer'));
+}
 
 //КНОПКА АВТОРИЗАЦИИ//ЛОГАУТ//МОБИЛЬНОЕ МЕНЮ
 headerBlock.addEventListener('click', (event) => {
@@ -69,11 +72,11 @@ headerBlock.addEventListener('click', (event) => {
       .then(() => {
         document.location.href = "/";
       })
-  } else if ((window.matchMedia("(max-width: 767px)").matches) & (event.target.classList.contains('header__newsexplorer')) & (!event.target.classList.contains('header__newsexplorer_menu'))) {
+  } else if ((!event.target.classList.contains('header__newsexplorer_menu')) && (isClickOnSmallScreen(event)))  {
     document.querySelector('.header').classList.add('header_menu');
     document.querySelector('.header__newsexplorer').classList.add('header__newsexplorer_menu');
     document.querySelector('.header__nav').classList.add('header__nav_menu');
-  } else if ((window.matchMedia("(max-width: 767px)").matches) & (event.target.classList.contains('header__newsexplorer')) & (event.target.classList.contains('header__newsexplorer_menu'))) {
+  } else if ((event.target.classList.contains('header__newsexplorer_menu')) && (isClickOnSmallScreen(event))) {
     document.querySelector('.header').classList.remove('header_menu');
     document.querySelector('.header__newsexplorer').classList.remove('header__newsexplorer_menu');
     document.querySelector('.header__nav').classList.remove('header__nav_menu');

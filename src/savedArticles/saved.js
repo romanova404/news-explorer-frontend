@@ -60,25 +60,25 @@ function articlesInfoRender(props) {
     if (res.data.length == 0) {
       articlesAmount.textContent = `${props.userName}, у вас пока нет сохранённых статей`;
     } else {
-      articlesAmount.textContent = `${props.userName}, у вас ${res.data.length} сохранённых статей`;
+      articlesAmount.textContent = `${props.userName}, количество сохранённых статей у вас: ${res.data.length}`;
     }
 
-    let query = [];
+    const allKeywords = [];
     for (let n = 0; n < res.data.length; n++) {
-      query.push(res.data[n].keyword);
+      allKeywords.push(res.data[n].keyword);
     }
 
-    let view = {};
-  for (let i = 0; i < query.length; i++) {
-    if (view[query[i]] == undefined) {
-      view[query[i]] = 1;
+    const keywordCount = {};
+  for (let i = 0; i < allKeywords.length; i++) {
+    if (keywordCount[allKeywords[i]] == undefined) {
+      keywordCount[allKeywords[i]] = 1;
     } else {
-      view[query[i]] += 1;
+      keywordCount[allKeywords[i]] += 1;
     }
   }
-  const viewKeys = Object.keys(view);
+  const viewKeys = Object.keys(keywordCount);
   const viewKeysSorted = viewKeys.sort(function(a, b) {
-    return view[b] - view[a];
+    return keywordCount[b] - keywordCount[a];
   });
     if (viewKeysSorted.length == 1) {
       keywordOne.textContent = viewKeysSorted[0];

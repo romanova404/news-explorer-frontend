@@ -92,9 +92,6 @@ export class NewsCardList {
     if (err == 404) {
       document.querySelector('.not-found__title').textContent = "Ничего не найдено";
       document.querySelector('.not-found__text').textContent = "К сожалению, по вашему запросу ничего не найдено";
-    } else if (err == 400) {
-      document.querySelector('.not-found__title').textContent = "Нечего искать";
-      document.querySelector('.not-found__text').textContent = "Пожалуйста, сначала введите тему новости в окно поиска";
     } else {
       document.querySelector('.not-found__title').textContent = "Во время запроса произошла ошибка";
       document.querySelector('.not-found__text').textContent = "Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз";
@@ -103,7 +100,8 @@ export class NewsCardList {
 
   showMore() {
     this.renderLoader();
-    this.arraylength += 3;
+    const rowSize = 3;
+    this.arraylength += rowSize;
     this.renderResults();
     if (this.cardArray.length < this.arraylength || this.arraylength >= 100) {
       document.querySelector('.results__more').classList.add('hidden');

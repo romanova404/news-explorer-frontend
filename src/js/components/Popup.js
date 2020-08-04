@@ -5,7 +5,6 @@ export class Popup {
 
   setContent(template) {
     this.clearContent();
-    console.log("шаблон в попап");
     this.container.appendChild(template.content.cloneNode(true));
   }
 
@@ -16,12 +15,10 @@ export class Popup {
   }
 
   open() {
-    console.log('открыть попап (нимношк)');
     this.container.classList.remove('hidden');
   }
 
   close() {
-    console.log('закройс');
     this.container.classList.add('hidden');
     this.clearContent();
   }

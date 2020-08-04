@@ -65,7 +65,7 @@ export class Form {
   }
 
   _getInfo() {
-    let formInfo = {};
+    const formInfo = {};
     for ( i = 0; i < (Array.from(this.formBlock.elements).length - 1); i++) {
       formInfo[this.formBlock.elements[i].name] = this.formBlock.elements[i].value;
     }
