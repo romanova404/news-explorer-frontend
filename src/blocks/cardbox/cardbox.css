@@ -1,0 +1,22 @@
+@import url(./__text/cardbox__text.css);
+.cardbox {
+  display: flex;
+  flex-basis: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 56px 0;
+  width: 100%;
+}
+
+@media (max-width: 1439px) and (min-width: 768px) {
+  .cardbox {
+    padding: 45px 0;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 321px) {
+  .cardbox {
+    padding: 22px 0;
+  }
+}

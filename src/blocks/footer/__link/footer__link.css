@@ -1,0 +1,28 @@
+.footer__link {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #1A1B22;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+@media (max-width: 1439px) and (min-width: 768px) {
+  .footer__link{
+    margin-right: 18px;
+  }
+  .footer__link:first-child {
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+  .footer__link{
+    font-size: 18px;
+    line-height: 48px;
+    margin-right: 10px;
+  }
+}

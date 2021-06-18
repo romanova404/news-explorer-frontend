@@ -1,0 +1,36 @@
+@import url(./__newsexplorer/header__newsexplorer.css);
+@import url(./__newsexplorer/header__newsexplorer_white_theme.css);
+@import url(./__newsexplorer/header__newsexplorer_menu.css);
+@import url(./__nav/header__nav.css);
+@import url(./__nav/header__nav_menu.css);
+@import url(./__link/header__link.css);
+@import url(./__link/header__link_white_theme.css);
+@import url(./__auth/header__auth.css);
+@import url(./__logout/header__logout.css);
+@import url(./__logout/header__logout_white_theme.css);
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #fff;
+  background-color: rgba(196, 196, 196, 0.01);
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+  padding: 0 104px;
+  height: 80px;
+}
+@media (max-width: 1439px) and (min-width: 768px) {
+  .header {
+    padding: 0 7%;
+    height: 15%;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+  .header {
+    height: 56px;
+    padding: 0;
+  }
+}

@@ -1,0 +1,10 @@
+.header__nav {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+  .header__nav {
+    display: none;
+  }
+}

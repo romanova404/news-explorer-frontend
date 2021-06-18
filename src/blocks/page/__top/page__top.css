@@ -1,0 +1,8 @@
+.page__top {
+  background-image: url(../../../images/georgia-de-lotz--UsJoNxLaNo-unsplash-min.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 1440px;
+}
