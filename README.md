@@ -1,12 +1,27 @@
+
+# Layout, infrastructure and frontend for the project NewsExplorer
+Two-page website with user registration and authorization, designed to help searching news by specific keywords within NewsApi service and save chosen news in Favourites which can be viewed later on a personal page.
+
+## gh-pages address
+https://romanova404.github.io/news-explorer-frontend/
+version 3.0.0
+
+### Scripts instruction (view in package.json - "scripts")
+1. dev (npm run dev) - for developers, launched automatically in browser with hot-reload.
+2. build (npm run build)- creates build in dist/ folder for pushing to a server. Every command makes a new one it, deleting the previous. 
+3. start (npm run start) - opens page at http://localhost:8080, without hot-reload.
+4. deploy (npm run deploy) - публикует сборку из папки dist на gh-pages.
+
+## Tech
+HTML, CSS, Node.js, Webpack, etc
+
+## What next
+Diploma protection???? :)
+____________________________________________________________________
+
 # Верстка, инфраструктура и фронтенд на JS для проекта "NewsExplorer"
 
 Проект - двухстраничный веб-сайт с регистрацией и авторизацией пользователей для поиска по ключевым словам новостей на сервисе NewsApi и сохранением отмеченых в избранном, с возможностью просмотра в личном хранилице и переход на страницы новостей. Полный функционал доступен по адресу в сети.
-
-## Адрес в сети
-https://yandexstudyproject.design
-
-## Адрес на github
-https://github.com/romanova404/news-explorer-frontend
 
 ## Адрес на gh-pages
 https://romanova404.github.io/news-explorer-frontend/
